@@ -1,0 +1,224 @@
+/* Reset & Pengaturan Dasar */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0f172a;
+    color: #f8fafc;
+    margin: 0;
+    padding: 0;
+}
+
+/* 1. Top Navbar (Rata Kiri) */
+.navbar {
+    background-color: #1e293b;
+    padding: 15px 30px;
+    border-bottom: 1px solid #334155;
+    text-align: left;
+}
+
+.nav-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #38bdf8;
+}
+
+/* 2. Hero Section */
+.hero-section {
+    background-color: #1e293b;
+    padding: 30px 20px;
+    text-align: center;
+    border-bottom: 1px solid #334155;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hero-logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #38bdf8;
+}
+
+.hero-title {
+    font-size: 2rem;
+    color: #38bdf8;
+    margin: 0;
+}
+
+.hero-subtitle {
+    color: #94a3b8;
+    font-size: 1rem;
+    margin: 5px 0 0 0;
+}
+
+/* 3. Section Instruksi & Tombol Download */
+.instructions-section {
+    padding: 30px 20px;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.welcome-box {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Teks Sambutan Berwarna Biru Terang */
+.welcome-box h3 {
+    margin-top: 0;
+    color: #38bdf8;
+    font-size: 1.4rem;
+}
+
+.welcome-box ul {
+    margin: 10px 0 0 0;
+    padding-left: 20px;
+    color: #94a3b8;
+}
+
+.welcome-box li {
+    margin-bottom: 8px;
+}
+
+.divider-white {
+    height: 1px;
+    background-color: #334155;
+    margin: 20px 0;
+}
+
+.info-blue-box {
+    background-color: #0284c7;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+}
+
+.info-blue-box p {
+    margin: 5px 0;
+}
+
+.instruction-text, .note-text {
+    color: #94a3b8;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.note-text {
+    color: #f87171;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* Baris Tombol Download */
+.download-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 25px;
+    justify-content: center;
+}
+
+.btn-blue {
+    background-color: #0ea5e9;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.95rem;
+    transition: background-color 0.2s, transform 0.1s;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-blue:hover {
+    background-color: #0284c7;
+    transform: translateY(-2px);
+}
+
+/* 4. Section Galeri Foto */
+.app-grid-section {
+    padding: 20px;
+}
+
+.custom-layout-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.grid-card img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 8px;
+    border: 1px solid #334155;
+    display: block;
+}
+
+/* 5. Widget Cuaca & Footer */
+.bottom-info-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.widget-card.weather {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 10px;
+    padding: 15px;
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+.widget-card.weather h5 {
+    margin: 0 0 10px 0;
+    color: #94a3b8;
+    font-size: 0.85rem;
+}
+
+.weather-display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.cloud-icon {
+    font-size: 1.5rem;
+}
+
+.temp {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #38bdf8;
+}
+
+.footer {
+    text-align: center;
+    padding: 30px 20px;
+    color: #64748b;
+    font-size: 0.85rem;
+    border-top: 1px solid #334155;
+    margin-top: 40px;
+}
