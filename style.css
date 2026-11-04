@@ -1,36 +1,34 @@
-/* Reset & Pengaturan Dasar */
+/* Reset & Base Styles */
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
+    background-color: #0b1329;
+    color: #ffffff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #0f172a;
-    color: #f8fafc;
-    margin: 0;
-    padding: 0;
+    line-height: 1.6;
 }
 
-/* 1. Top Navbar (Rata Kiri) */
+/* Navbar */
 .navbar {
-    background-color: #1e293b;
-    padding: 15px 30px;
-    border-bottom: 1px solid #334155;
-    text-align: left;
+    background-color: #0b1329;
+    padding: 15px 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.nav-title {
+.nav-brand .nav-title {
+    color: #3b82f6;
     font-size: 1.2rem;
     font-weight: bold;
-    color: #38bdf8;
 }
 
-/* 2. Hero Section */
+/* Hero Section */
 .hero-section {
-    background-color: #1e293b;
     padding: 30px 20px;
     text-align: center;
-    border-bottom: 1px solid #334155;
 }
 
 .hero-container {
@@ -38,145 +36,126 @@ body {
     flex-direction: column;
     align-items: center;
     gap: 15px;
-    max-width: 600px;
-    margin: 0 auto;
 }
 
-.hero-logo {
+.hero-logo-wrapper {
     width: 80px;
     height: 80px;
     border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #3b82f6;
+}
+
+.hero-logo {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    border: 2px solid #38bdf8;
 }
 
 .hero-title {
-    font-size: 2rem;
-    color: #38bdf8;
-    margin: 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffffff;
 }
 
 .hero-subtitle {
+    font-size: 0.95rem;
     color: #94a3b8;
-    font-size: 1rem;
-    margin: 5px 0 0 0;
 }
 
-/* 3. Section Instruksi & Tombol Download */
+/* Instructions & Content Section */
 .instructions-section {
-    padding: 30px 20px;
+    padding: 20px;
 }
 
 .container {
-    max-width: 900px;
+    max-width: 800px;
     margin: 0 auto;
 }
 
 .welcome-box {
     background-color: #1e293b;
     border: 1px solid #334155;
-    border-radius: 10px;
     padding: 20px;
+    border-radius: 12px;
     margin-bottom: 20px;
 }
 
-/* Teks Sambutan Berwarna Biru Terang */
 .welcome-box h3 {
-    margin-top: 0;
-    color: #38bdf8;
-    font-size: 1.4rem;
+    color: #3b82f6;
+    margin-bottom: 10px;
 }
 
 .welcome-box ul {
-    margin: 10px 0 0 0;
-    padding-left: 20px;
-    color: #94a3b8;
+    list-style-type: none;
+    margin-top: 10px;
 }
 
 .welcome-box li {
-    margin-bottom: 8px;
+    margin-bottom: 5px;
+    color: #cbd5e1;
 }
 
 .divider-white {
+    width: 100%;
     height: 1px;
-    background-color: #334155;
+    background-color: rgba(255, 255, 255, 0.2);
     margin: 20px 0;
 }
 
-.info-blue-box {
-    background-color: #0284c7;
-    color: white;
-    padding: 15px 20px;
-    border-radius: 8px;
-    font-size: 0.95rem;
-}
-
-.info-blue-box p {
-    margin: 5px 0;
-}
-
 .instruction-text, .note-text {
-    color: #94a3b8;
-    font-size: 0.95rem;
-    line-height: 1.5;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #cbd5e1;
+    margin-bottom: 15px;
 }
 
 .note-text {
     color: #f87171;
-    font-weight: bold;
-    margin-top: 15px;
+    font-weight: 600;
 }
 
-/* Baris Tombol Download */
+/* Download Bar (Tombol Tombol) */
 .download-bar {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 12px;
-    margin-top: 25px;
-    justify-content: center;
+    margin-top: 20px;
 }
 
 .btn-blue {
-    background-color: #0ea5e9;
-    color: white;
-    padding: 12px 20px;
+    display: block;
+    width: 100%;
+    background-color: #2563eb;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 20px;
     border-radius: 8px;
     text-decoration: none;
     font-weight: bold;
-    font-size: 0.95rem;
-    transition: background-color 0.2s, transform 0.1s;
-    text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .btn-blue:hover {
-    background-color: #0284c7;
-    transform: translateY(-2px);
+    background-color: #1d4ed8;
 }
 
-/* 4. Section Galeri Foto */
-.app-grid-section {
-    padding: 20px;
+.btn-blue:active {
+    transform: scale(0.98);
 }
 
-.custom-layout-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: center;
-    max-width: 900px;
-    margin: 0 auto;
-}
-
-.grid-card img {
-    width: 100%;
-    max-width: 250px;
-    border-radius: 8px;
+/* Closing Box */
+.closing-box {
+    background-color: #1e293b;
     border: 1px solid #334155;
-    display: block;
+    padding: 20px;
+    border-radius: 12px;
+    margin-top: 30px;
 }
 
-/* 5. Widget Cuaca & Footer */
+/* Widget Cuaca */
 .bottom-info-section {
     padding: 20px;
     text-align: center;
@@ -185,16 +164,17 @@ body {
 .widget-card.weather {
     background-color: #1e293b;
     border: 1px solid #334155;
-    border-radius: 10px;
     padding: 15px;
-    max-width: 250px;
-    margin: 0 auto;
+    border-radius: 10px;
+    display: inline-block;
+    min-width: 200px;
 }
 
 .widget-card.weather h5 {
-    margin: 0 0 10px 0;
-    color: #94a3b8;
     font-size: 0.85rem;
+    color: #94a3b8;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
 }
 
 .weather-display {
@@ -211,14 +191,24 @@ body {
 .temp {
     font-size: 1.2rem;
     font-weight: bold;
-    color: #38bdf8;
+    color: #ffffff;
 }
 
+/* Footer */
 .footer {
     text-align: center;
-    padding: 30px 20px;
+    padding: 20px;
     color: #64748b;
     font-size: 0.85rem;
-    border-top: 1px solid #334155;
-    margin-top: 40px;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    margin-top: 20px;
+}
+
+/* Responsive untuk Laptop/Layar Lebar */
+@media (min-width: 768px) {
+    .download-bar {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
 }
